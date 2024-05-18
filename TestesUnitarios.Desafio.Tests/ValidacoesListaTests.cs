@@ -45,21 +45,27 @@ public class ValidacoesListaTests
 
         // Act
 
+        var res = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
+        
+    
         // Assert
+        Assert.False(res);
     }
 
     //TODO: Corrigir a anotação [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
-        //TODO: Implementar método de teste
-
+        //TODO: Implementar método de test
         // Arrange
         var lista = new List<int> { 5, 7, 8, 9 };
         var resultadoEsperado = new List<int> { 10, 14, 16, 18 };
         
         // Act
+        var res = _validacoes.MultiplicarNumerosLista(lista,2);
 
         // Assert
+
+        Assert.Equal(resultadoEsperado, res);
     }
 
     [Fact]
